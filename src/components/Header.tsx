@@ -3,6 +3,7 @@ import userIconWhite from '@/../public/icons/user-white.svg'
 import powerIcon from '@/../public/icons/power.svg'
 import shopIcon from '@/../public/icons/shop.svg'
 import clockIcon from '@/../public/icons/clock.svg'
+import cartIconWhite from '@/../public/icons/cart-white.svg'
 
 import React from 'react'
 
@@ -42,7 +43,10 @@ export default function Header() {
           <DropdownMenu>
             <DropdownMenuTrigger> 
               <div className='flex gap-x-2 rounded-md items-center text-white'>
-                <span> Username</span>
+                <div className='rounded-full border p-3 bg-primary'>
+                  <Image src={cartIconWhite} alt='cart icon' height={25}></Image>
+                </div>
+
                 <div className='rounded-full border p-2'>
                   <Image src={userIconWhite} width={25} alt='account icon'/> 
                 </div>
@@ -67,9 +71,9 @@ export default function Header() {
       </div>
       <div className="flex justify-around p-4 border-b mb-4">
             {
-            itemCategories.map((value) => {
-                  return <Button key={value} className="p-4 bg-primary text-2xl hover:underline h-10">{value}</Button>
-            })
+              itemCategories.map((value) => {
+                    return <Button key={value} className="p-4 bg-primary text-2xl hover:underline h-10">{value}</Button>
+              })
             }
       </div>
 </div>
