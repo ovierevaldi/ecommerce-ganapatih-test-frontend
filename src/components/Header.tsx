@@ -2,6 +2,7 @@
 import userIconWhite from '@/../public/icons/user-white.svg'
 import powerIcon from '@/../public/icons/power.svg'
 import shopIcon from '@/../public/icons/shop.svg'
+import clockIcon from '@/../public/icons/clock.svg'
 
 import React from 'react'
 
@@ -18,6 +19,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
   const itemCategories = [
@@ -50,7 +52,14 @@ export default function Header() {
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem className='p-2'>
-                <span> Log Out</span> <Image src={powerIcon} width={20} alt='account icon'/> 
+                <Link href={'/purchase-history/'}>
+                  <Image src={clockIcon} width={20} alt='account icon'/> <span> Purchase History</span> 
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className='p-2'>
+                <Link href={'/purchase-history/'}>
+                  <Image src={powerIcon} width={20} alt='account icon'/> <span> Log Out</span>
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
