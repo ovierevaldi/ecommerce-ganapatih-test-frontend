@@ -1,14 +1,16 @@
-import Image from "next/image";
+// Icons
+
+import ProductButton from "@/components/ProductButton";
+
 
 export default function Home() {
-  return (
-   <div className="grid grid-cols-6">
-      <div className="col-span-2 bgred-500">
-a
-      </div>
-      <div className="col-span-4 bg-blue-400">
-b
-      </div>
-   </div>
-  );
+      return (
+            <div className="max-w-6xl mx-auto">
+                  <div className='grid grid-cols-4 gap-6'>
+                        <ProductButton id="1">
+            
+                        </ProductButton>
+                  </div>
+            </div>
+      );
 }
