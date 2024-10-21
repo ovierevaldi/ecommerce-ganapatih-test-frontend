@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 export const robotoFont = Roboto({
-  weight: ["400", "500", "700"],
+  weight: ['300', "400", "500", "700"],
   subsets: ["latin"]
 })
 
@@ -42,7 +42,7 @@ export default function RootLayout({
         className={`${robotoFont.className}`}
       >
         {/* <ShopAlert></ShopAlert> */}
-        <Header />
+        {/* <Header />
         <div className="max-w-6xl mx-auto">
           <div className='flex items-center justify-between'>
               <div className="flex gap-x-3 items-center">
@@ -75,13 +75,13 @@ export default function RootLayout({
               </div>
               
 
-          </div>
+          </div> */}
           <div className='px-6 py-16'>
             {children}
           </div>
-        </div>
+        {/* </div> */}
 
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </body>
     </html>
   );
