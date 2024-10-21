@@ -27,17 +27,18 @@ export default function HeaderAdminPage() {
       <div className='col-span-1 text-right pr-4'>
         <DropdownMenu>
           <DropdownMenuTrigger> 
-          <Button className='p-6' variant='outline'>
-            <Image src={userIcon} width={25} alt='account icon'/> <span> Username</span>
-          </Button>
+            <div className='flex gap-x-2 rounded-md items-center'>
+              <span> Username</span>
+              <div className='rounded-full border p-2'>
+                <Image src={userIcon} width={25} alt='account icon'/> 
+              </div>
+            </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className='min-w-[180px] -translate-x-4'>
+          <DropdownMenuContent className='min-w-[180px] -translate-x-4 translate-y-1'>
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem className='p-2'>
-            <Button className='flex justify-between w-full' variant='ghost'>
-            <span> Log Out</span> <Image src={powerIcon} width={20} alt='account icon'/> 
-            </Button>
+              <span> Log Out</span> <Image src={powerIcon} width={20} alt='account icon'/> 
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
