@@ -21,12 +21,12 @@ export default function RootLayout({
         <HeaderAdminPage />
         <div className='grid h-screen'>
           <div className="grid grid-cols-6">
-            <div className="col-span-1 p-4 border-r ">
+            <div className="col-span-1 border-r ">
                 <p className='text-center border-b p-4 mb-4 text-xl font-semibold '>
                   <Link href={'/admin'} className="hover:border px-5 py-2 rounded-md">Dashboard</Link>
                 </p>
 
-                <div className="pt-2">
+                <div className="p-4">
                   <Link href={'/admin/manage-products'}>
                     <Button className='text-xl w-full h-12 mb-6'>
                         <Image src={productIcon} alt='product icon'/>

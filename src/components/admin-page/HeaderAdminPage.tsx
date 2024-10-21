@@ -22,7 +22,7 @@ export default function HeaderAdminPage() {
       <div className='col-span-1'>
 
       </div>
-      <p className='text-4xl text-center p-5 font-semibold col-span-1'>Admin Page</p>
+      <p className='text-3xl text-center p-5 font-semibold col-span-1'>Admin Page</p>
 
       <div className='col-span-1 text-right pr-4'>
         <DropdownMenu>
